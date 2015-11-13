@@ -238,6 +238,20 @@
       ],
     },
     {
+      'target_name': 'fstintersect',
+      'type': 'executable',
+      'dependencies': [
+        'lib',
+        'script',
+      ],
+      'include_dirs': [
+        '<(openfst_dir)/src/include',
+      ],
+      'sources': [
+        '<(openfst_dir)/src/bin/fstintersect.cc',
+      ],
+    },
+    {
       'target_name': 'lib',
       'product_name': 'libfst',
       'type': 'static_library',
