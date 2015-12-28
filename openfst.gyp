@@ -515,5 +515,23 @@
         '<(openfst_dir)/src/test/algo_test.h',
       ],
     },
+    {
+      'target_name': 'fstngram',
+      'product_name': 'libfstngram',
+      'type': 'static_library',
+      'direct_dependent_settings': {
+        'include_dirs': [
+          '<(openfst_dir)/src/include',
+        ],
+      },
+      'include_dirs': [
+        '<(openfst_dir)/src/include',
+      ],
+      'sources': [
+        '<(openfst_dir)/src/extensions/ngram/bitmap-index.cc',
+        '<(openfst_dir)/src/extensions/ngram/ngram-fst.cc',
+        '<(openfst_dir)/src/extensions/ngram/nthbit.cc',
+      ],
+    },
   ],
 }
