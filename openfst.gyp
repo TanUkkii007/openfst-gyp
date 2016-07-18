@@ -1,6 +1,6 @@
 {
   'variables': {
-    'openfst_dir': 'openfst-1.5.0',
+    'openfst_dir': 'openfst-1.5.3',
   },
   'target_defaults': {
     'cxxflags':[
